@@ -1,0 +1,28 @@
+{
+  "name": "opus",
+  "version": "1.0.0",
+  "description": "Get informed with realtime info from really simple syndications (RSS). A world largest rss news center.",
+  "author": "=elirehema",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt ",
+    "build": "NODE_ENV=dev nuxt build",
+    "start": "nuxt start",
+    "generate": "NODE_ENV=production nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/bulma": "^1.2.7",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "file-system": "^2.2.2",
+    "nuxt": "^2.0.0",
+    "sweetalert": "^2.1.2",
+    "vue-i18n": "^8.15.5",
+    "vuetify": "^2.2.18",
+    "vuex-persistedstate": "^3.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "@nuxtjs/vuetify": "^1.11.0"
+  }
+}
