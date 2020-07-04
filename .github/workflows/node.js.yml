@@ -9,7 +9,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install 🦹🏻
+      - name: Install Node Modulles 🦹🏻
         run: npm install
       - name: Run lint test 🦠 
         run: npm run lint
