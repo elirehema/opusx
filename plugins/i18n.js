@@ -20,7 +20,6 @@ export default ({ app }) => {
       sw: require("~/static/locales/content-sw.json"),
       fr: require("~/static/locales/content-fr.json"),
       ar: require("~/static/locales/content-ar.json"),
-
-    }
+    },
   });
 };

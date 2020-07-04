@@ -8,15 +8,17 @@
         <v-list-item :key="item.id" :href="item.url" target="_blank">
           <v-list-item-content>
             <v-list-item-title v-html="item.name"></v-list-item-title>
-            <v-list-item-subtitle v-html="item.description"></v-list-item-subtitle>
+            <v-list-item-subtitle
+              v-html="item.description"
+            ></v-list-item-subtitle>
           </v-list-item-content>
           <v-list-item-action>
-            <v-btn icon >
-              <v-icon color="grey lighten-1" >mdi-information</v-icon>
+            <v-btn icon>
+              <v-icon color="grey lighten-1">mdi-information</v-icon>
             </v-btn>
           </v-list-item-action>
         </v-list-item>
-        <v-divider :v-if="index === 0" :key="index"></v-divider>
+        <v-divider :key="index" :v-if="index === 0"></v-divider>
       </template>
     </v-list>
   </v-card>
@@ -28,24 +30,24 @@ export default {
   data() {
     return {
       datalist: [],
-      right: true
+      right: true,
     };
+  },
+  beforeMount() {
+    // this.fetdata();
   },
   methods: {
     async fetdata() {
-      var url =
+      const url =
         "https://newsapi.org/v2/sources?apiKey=eff96829b48749acbd9b4e8eb5f621f5";
-      var req = new Request(url);
+      const req = new Request(url);
       await fetch(req)
-        .then(response => response.json())
-        .then(responseJSON => {
+        .then((response) => response.json())
+        .then((responseJSON) => {
           console.log(responseJSON);
           this.datalist = responseJSON.sources;
         });
-    }
+    },
   },
-  beforeMount: function() {
-    //this.fetdata();
-  }
 };
 </script>
