@@ -2,7 +2,7 @@ require("dotenv").config();
 export default {
   mode: "spa",
   router: {
-    base: process.env.NODE_ENV === "production" ? "/rss/" : "/",
+    base: process.env.NODE_ENV === "production" ? "/opus_webapp/" : "/",
     routerNameSplitter: "/",
   },
   env: {
