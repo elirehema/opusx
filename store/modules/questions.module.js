@@ -27,7 +27,7 @@ const actions ={
         await this.$api.get(`questions`)
         .then(response=>{
             
-        commit(mutation.GET_ALL_QUESTIONS_SUCCESS,response.data.data);
+        commit(mutation.GET_ALL_QUESTIONS_SUCCESS,response.data);
         }).catch(error =>{
             commit(mutation.GET_ALL_QUESTIONS_ERROR);
         });
