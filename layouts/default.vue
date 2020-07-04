@@ -1,16 +1,14 @@
 <template>
   <v-app dark>
-   
     <v-app-bar :clipped-left="clipped" fixed dense flat app>
       <v-toolbar-title>
-      <v-avatar color="primary" tile size="36">
-      <img src="@/assets/img/apple-touch-icon.png" alt="Opus" />
-      </v-avatar>
+        <v-avatar color="primary" tile size="36">
+          <img src="@/assets/img/apple-touch-icon.png" alt="Opus" />
+        </v-avatar>
       </v-toolbar-title>
       <v-spacer />
       <v-text-field
         prepend-icon="mdi-magnify"
-        
         outlined
         dense
         text-color="cyan lighten-1"
@@ -21,7 +19,10 @@
       ></v-text-field>
       <v-spacer />
       <v-avatar color="primary" size="36">
-        <img src="https://answersafrica.com/wp-content/uploads/2015/01/somalia.jpg" alt="John" />
+        <img
+          src="https://answersafrica.com/wp-content/uploads/2015/01/somalia.jpg"
+          alt="John"
+        />
       </v-avatar>
       <v-btn icon>
         <v-icon>mdi-help-circle</v-icon>
@@ -49,12 +50,7 @@
 </template>
 
 <script>
-import NewsSourceComponent from "~/components/news_sources_component.vue";
-
 export default {
-  components: {
-    newssourcecomponent: NewsSourceComponent
-  },
   data() {
     return {
       clipped: false,
@@ -64,8 +60,8 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Opass"
+      title: "Opass",
     };
-  }
+  },
 };
 </script>

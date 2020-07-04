@@ -1,19 +1,19 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import modules from "./modules/";
 import createPersistedState from "vuex-persistedstate";
+import modules from "./modules/";
 
 Vue.use(Vuex);
 
 const store = () => {
   return new Vuex.Store({
-    state: {
-
-    },
-    modules: modules,
-    plugins: [createPersistedState({
-      storage: window.sessionStorage,
-    })]
+    state: {},
+    modules,
+    plugins: [
+      createPersistedState({
+        storage: window.sessionStorage,
+      }),
+    ],
   });
 };
 
