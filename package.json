@@ -19,7 +19,7 @@
     "file-system": "^2.2.2",
     "nuxt": "^2.0.0",
     "sweetalert": "^2.1.2",
-    "vue-i18n": "^8.15.5",
+    "vue-i18n": "^8.24.4",
     "vuetify": "^2.2.18",
     "vuex-persistedstate": "^3.0.1"
   },
