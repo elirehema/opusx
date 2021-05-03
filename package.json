@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
-    "@nuxtjs/bulma": "^1.2.7",
+    "@nuxtjs/bulma": "^1.3.0",
     "@nuxtjs/pwa": "^3.3.5",
     "file-system": "^2.2.2",
     "nuxt": "^2.15.4",
