@@ -1,6 +1,6 @@
 require("dotenv").config();
 export default {
-  mode: "spa",
+  ssr: false,
   router: {
     base: process.env.NODE_ENV === "production" ? "/opus_webapp/" : "/",
     routerNameSplitter: "/",
