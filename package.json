@@ -20,7 +20,7 @@
     "nuxt": "^2.15.7",
     "sweetalert": "^2.1.2",
     "vue-i18n": "^8.24.4",
-    "vuetify": "^2.5.6",
+    "vuetify": "^2.5.13",
     "vuex-persistedstate": "^3.2.0"
   },
   "devDependencies": {
