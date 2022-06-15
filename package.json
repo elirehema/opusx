@@ -39,6 +39,6 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-run": "^0.8.1",
-    "prettier": "^2.3.2"
+    "prettier": "^2.7.0"
   }
 }
