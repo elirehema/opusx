@@ -17,7 +17,7 @@
     "@nuxtjs/bulma": "^1.3.0",
     "@nuxtjs/pwa": "^3.3.5",
     "file-system": "^2.2.2",
-    "nuxt": "^2.15.7",
+    "nuxt": "^3.0.0",
     "sweetalert": "^2.1.2",
     "vue-i18n": "^8.24.4",
     "vuetify": "^2.5.6",
